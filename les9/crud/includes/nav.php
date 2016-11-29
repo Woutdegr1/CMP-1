@@ -2,6 +2,7 @@
     $navigation = array(
     "index.php" => "Home",
      "studenten.php" => "Studenten",
+     "insert_student.php" => "Voeg toe",
 )
 ?>
 <!-- Fixed navbar -->
