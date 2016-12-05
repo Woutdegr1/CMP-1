@@ -14,3 +14,6 @@ Indien je nog geen onderwerp hebt, vul het toch maar in!
 Onderwerp is niet definitief :)
 
 !PHP RULES!
+
+- Probeer eens een afbeelding up te loaden naar 'je server'
+ en toe te voegen aan je databank
