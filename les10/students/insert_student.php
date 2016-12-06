@@ -8,14 +8,14 @@ if(isset($_POST['new'])){
 	require("connectie.php");
 
 	$target_dir = "profilepictures/";
-    $target_file = $target_dir . $_FILES["profilepicture"]["name"];
+    $target_file = $target_dir ."profilepic_". $_FILES["profilepicture"]["name"];
     move_uploaded_file($_FILES["profilepicture"]["tmp_name"], $target_file);
 
 	$naam = $_POST["naam"];
 	$familienaam = $_POST["familienaam"];
 	$email = $_POST["email"];
-	$profilepicture_name = basename($_FILES["profilepicture"]["name"]);
-	echo $profilepicture_name;
+	$profilepicture_name = "profilepic_" . basename($_FILES["profilepicture"]["name"]);
+	
 	try{
 		$stmt = $db->prepare("INSERT INTO students 
                         (naam, familienaam, email, profilepicture)
