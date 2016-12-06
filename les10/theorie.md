@@ -1,13 +1,13 @@
-FOREIGN KEY OPTIONS
+FOREIGN KEY OPTIES
 -------------------
 
-Set NULL : Sets the column value to NULL when you delete the parent table row.
+**Set NULL** : Sets the column value to NULL when you delete the parent table row.
 
-CASCADE : CASCADE will propagate the change when the parent changes. If you delete a row, rows in constrained tables that reference that row will also be deleted, etc.
+**CASCADE** : CASCADE will propagate the change when the parent changes. If you delete a row, rows in constrained tables that reference that row will also be deleted, etc.
 
-RESTRICT : RESTRICT causes you can not delete a given parent row if a child row exists that references the value for that parent row.
+**RESTRICT** : RESTRICT causes you can not delete a given parent row if a child row exists that references the value for that parent row.
 
-NO ACTION : NO ACTION and RESTRICT are very much alike. when an UPDATE or DELETE statement is executed on the referenced table, the DBMS verifies at the end of the statement execution that none of the referential relationships are violated. in short child row no concern if parent row delete or update.
+**NO ACTION** : NO ACTION and RESTRICT are very much alike. when an UPDATE or DELETE statement is executed on the referenced table, the DBMS verifies at the end of the statement execution that none of the referential relationships are violated. in short child row no concern if parent row delete or update.
 
 
 RELATIES
